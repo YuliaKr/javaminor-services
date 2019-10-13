@@ -7,15 +7,11 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
-public class AccountDto {
+public class MasterAccountDto extends AccountDto {
     @NotNull
-    private String iban;
+    private SlaveAccountDto firstSlaveAccount;
 
     @NotNull
-    private Double balance;
-
-    //public String getAccountNumber() {
-    //    return iban.substring(5);
-    //}
+    private SlaveAccountDto secondSlaveAccount;
 
 }

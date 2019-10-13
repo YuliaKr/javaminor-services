@@ -1,5 +1,6 @@
 package com.javaminor.three_layers_model.repositories.entities;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,8 +23,16 @@ public class Account {
     @Column(name = "accountNumber", nullable = false)
     private String accountNumber;
 
+    @Column(name = "iban", nullable = false)
+    @Setter(AccessLevel.NONE)
+    private String iban;
+
     @Version
     @Column(name = "version")
     private Date version;
+
+    public void setIban(String accountNumber) {
+        this.iban = "NL00TEST" + this.accountNumber;
+    }
 }
 

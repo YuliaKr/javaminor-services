@@ -1,4 +1,4 @@
 package com.javaminor.three_layers_model.controllers;
 
-public class MasterAccount {
+public class AccountControllerTest {
 }
