@@ -13,11 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 
 @Aspect
 @Configuration
-public class LogsDBAspect {
+public class LogAspects {
     private final ILogService logService;
 
     @Autowired
-    public LogsDBAspect(ILogService logService) {
+    public LogAspects(ILogService logService) {
         this.logService = logService;
     }
 
