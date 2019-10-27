@@ -13,9 +13,4 @@ public class AccountDto {
 
     @NotNull
     private Double balance;
-
-    //public String getAccountNumber() {
-    //    return iban.substring(5);
-    //}
-
 }

@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 public interface AccountMapper {
 
     AccountMapper INSTANCE = Mappers.getMapper( AccountMapper.class );
+    @Mapping(target = "accountNumber", ignore = true)
     Account sourceToDestination(AccountDto source);
 
-    @Mapping(target = "accountNumber", ignore = true)
     AccountDto destinationToSource(Account destination);
 }
