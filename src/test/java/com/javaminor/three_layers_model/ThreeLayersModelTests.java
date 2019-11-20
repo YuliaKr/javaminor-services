@@ -11,5 +11,4 @@ public class ThreeLayersModelTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }
